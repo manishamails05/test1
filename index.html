@@ -1,195 +1,164 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style3.css">
+  <title>Responsive Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
     .container {
-      display: flex;
-      align-items: center;
-    }
+  display: flex;
+  align-items: center;
+}
 
-    .rounded-box {
-      background-color: #b3d7ff;
-      border-radius: 15px;
-      padding: 10px;
-      width: 100px;
-      text-align: center;
-    }
+.rounded-box {
+  background-color: #b3d7ff;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
 
-    .rounded-box p {
-      margin: 0;
-      color: #333;
-    }
+.rounded-box p {
+  margin: 0;
+  color: #333;
+}
 
-    .search-bar {
-      display: flex;
-      align-items: center;
-      margin-left: 60px;
-    }
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
 
-    .search-bar input {
-      background-color: #b3d7ff;
-      border-radius: 15px;
-      padding: 10px;
-      border: none;
-      margin-right: 10px;
-    }
+.search-bar input {
+  background-color: #b3d7ff;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+}
 
-    .search-bar button {
-      background-color: #b3d7ff;
-      border-radius: 15px;
-      padding: 10px 15px;
-      border: none;
-      color: #333;
-    }
+.search-bar button {
+  background-color: #b3d7ff;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: none;
+  color: #333;
+}
 
-    #user {
-      margin-left: 10px;
-      width: 20px;
-    }
+#user {
+  margin-left: 10px;
+  width: 20px;
+}
 
-    #bag {
-      margin-left: 20px;
-      width: 20px;
-    }
+#bag {
+  margin-left: 20px;
+  width: 20px;
+}
 
-    nav {
-      background-color: #b3d7ff;
-      border-radius: 15px;
-      padding: 10px;
-      margin-top: 20px;
-    }
+nav {
+  background-color: #b3d7ff;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+}
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-    li {
-      margin: 0 10px;
-    }
+li {
+  margin: 0 10px;
+}
 
-    a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px 10px;
-      border-radius: 10px;
-    }
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
 
-    a:hover {
-      background-color: #89b8ff;
-      color: #fff;
-    }
+a:hover {
+  background-color: #89b8ff;
+  color: #fff;
+}
 
-    #summer {
-      margin-top: 20px;
-      border-radius: 10%;
-      width: 150px;
-      height: 200px;
-      border: 4px solid #b3d7ff;
-    }
+#summer {
+  margin-top: 20px;
+  border-radius: 10%;
+  width: 150px;
+  height: 200px;
+  border: 4px solid #b3d7ff;
+}
 
-    .content {
-      display: flex;
-    }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
-    .content h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
-      padding-top: 30px;
-      padding-left: 10px;
-    }
+.content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
 
-    .big {
-      display: flex;
-    }
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-    .flower {
-      height: 300px;
-      width: 200px;
-      border: 4px solid #b3d7ff;
-    }
+.rounded-box2 {
+  background-color: #b3d7ff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
 
-    #clicktop {
-      border-radius: 0;
-      background-color: white;
-    }
+.rounded-box2 p {
 
-    #clicktop2 {
-      border-radius: 0;
-      background-color: white;
-    }
-
-    .rounded-box2 {
-      background-color: #b3d7ff;
-      border-radius: 15px;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    .rounded-box2 p {
-      margin: 0;
-      color: #333;
-    }
-
-    #summer2 {
-      margin-top: 20px;
-      border-radius: 10%;
-      width: 150px;
-      height: 200px;
-      border: 4
-    }
-
-
-</style>
+  </style>
 </head>
-
-
 <body>
- 
-   
-<div class="container">
-  <div class="rounded-box">
-    <p>...</p>
+  <div class="container">
+    <div class="rounded-box">
+      <p>...</p>
+    </div>
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="Search..." class="form-control">
+    </div>
+    <img src="user.png" id="user" class="ms-2">
+    <img src="bag.png" id="bag" class="ms-2">
   </div>
-  <div class="search-bar">
-    <input id="searchInput" type="text" placeholder="Search...">
-  </div>
-  <img src="user.png" id="user">
- 
-  <img src="bag.png" id="bag">
-</div>
 
- 
-  <nav>
-  <ul>
-    <li><a href="index2.html">Home</a></li>
-    <li><a href="tops2.html">Tops</a></li>
-    <li><a href="bottoms2.html">Bottoms</a></li>
-    <li><a href="dresses2.html">Dresses</a></li>
-    <li><a href="accessories.html">Accessories</a></li>
-  </ul>
-</nav>
+  <nav class="bg-light mt-3 rounded">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="index2.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="tops2.html">Tops</a></li>
+      <li class="nav-item"><a class="nav-link" href="bottoms2.html">Bottoms</a></li>
+      <li class="nav-item"><a class="nav-link" href="dresses2.html">Dresses</a></li>
+      <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+    </ul>
+  </nav>
 
   <div class="content">
- <img src="summer-outfit.jpeg" id="summer">
-  <h1>Try New Styles for the Season!</h1>
-</div>
-
- 
-   
-<div class="footer">
-  <div class="rounded-box2">
-    <a href="https://www.instagram.com/"><img src="instagram.png" id="insta" height=20px width=20px ></a>
+    <img src="summer-outfit.jpeg" id="summer" class="img-fluid" alt="Summer Outfit">
+    <h1 class="ms-2">Try New Styles for the Season!</h1>
   </div>
- </div>
 
+  <footer class="footer">
+    <div class="rounded-box2">
+      <a href="https://www.instagram.com/"><img src="instagram.png" id="insta" height="20" width="20"></a>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
